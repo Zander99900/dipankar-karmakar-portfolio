@@ -19,18 +19,18 @@ export default function HeaderPortfolio() {
         id="sticky-menu"
       >
         <div className="container">
-          <div className="row gx-3 align-items-center justify-content-between flex-nowrap">
-            <div className="col">
+          <div className="row mt-2 gx-2 align-items-center justify-content-between flex-nowrap w-100">
+            <div className="col-auto">
               <div className="header-logo portfolio-header-brand">
                 <SectionLink href="#home" className="portfolio-logo-link" aria-label={`${profile.name} home`}>
                   <PortfolioLogo />
                 </SectionLink>
               </div>
             </div>
-            <div className="col d-none d-lg-block">
-              <div className="azzle-main-menu-item">
-                <nav className="main-menu menu-style1 d-none d-lg-block menu-left" aria-label="Primary navigation">
-                  <ul>
+            <div className="col d-none d-lg-flex justify-content-end">
+              <div className="azzle-main-menu-item portfolio-desktop-nav">
+                <nav className="main-menu menu-style1 portfolio-desktop-menu" aria-label="Primary navigation">
+                  <ul className="portfolio-desktop-menu-list">
                     {portfolio_menu_data.map((item) => (
                       <li key={item.title}>
                         {item.download ? (
@@ -52,7 +52,7 @@ export default function HeaderPortfolio() {
                 </nav>
               </div>
             </div>
-            <div className="col-auto d-flex align-items-center d-lg-none">
+            <div className="col-auto d-flex align-items-center d-lg-none ms-auto">
               <div className="azzle-header-menu">
                 <nav className="navbar site-navbar justify-content-between">
                   <button

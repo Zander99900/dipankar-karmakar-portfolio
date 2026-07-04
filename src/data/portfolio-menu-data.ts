@@ -9,7 +9,7 @@ const portfolio_menu_data: PortfolioMenuItem[] = [
   { title: "About", path: "#about" },
   { title: "Projects", path: "#projects" },
   { title: "Experience", path: "#experience" },
-  { title: "Skills", path: "#skills" },
+  // { title: "Skills", path: "#skills" },
   { title: "Resume", path: "/assets/images/dipankar_karmakar_resume.pdf", download: true },
   { title: "Contact", path: "#contact" },
 ];

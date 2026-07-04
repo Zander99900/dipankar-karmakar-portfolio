@@ -166,6 +166,75 @@
   color: #f5f5f5;
 }
 
+.portfolio-header .portfolio-desktop-nav {
+  width: 100%;
+}
+
+.portfolio-header .portfolio-desktop-menu-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-header .portfolio-desktop-menu-list > li {
+  display: block;
+  margin: 0 !important;
+}
+
+.portfolio-header .portfolio-desktop-menu-list a {
+  display: block;
+  padding: 10px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.portfolio-header .portfolio-desktop-menu-list a:hover {
+  color: #f5f5f5;
+}
+
+@media (min-width: 1400px) {
+  .portfolio-header .portfolio-desktop-menu-list a {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .portfolio-header .portfolio-text-logo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .portfolio-header .portfolio-text-logo-surname {
+    display: none;
+  }
+
+  .portfolio-header .portfolio-text-logo {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .portfolio-header .portfolio-desktop-menu-list a {
+    padding: 10px 6px;
+    font-size: 13px;
+  }
+
+  .portfolio-header .portfolio-text-logo-mark {
+    width: 34px;
+    height: 34px;
+    font-size: 11px;
+  }
+}
+
 .portfolio-header .portfolio-menu-toggle {
   display: flex;
   align-items: center;
@@ -463,6 +532,10 @@
   margin-right: auto;
 }
 
+.portfolio-dark .portfolio-hero .azzle-hero-button {
+  margin-bottom: 56px;
+}
+
 @media (max-width: 991px) {
   .portfolio-dark .portfolio-hero.azzle-hero-section4 {
     min-height: 85vh;
@@ -473,7 +546,8 @@
 
 /* Feature strip */
 .portfolio-dark .portfolio-feature-strip {
-  margin-top: -80px;
+  margin-top: 0;
+  padding-top: 24px;
   padding-bottom: 0;
 }
 
@@ -1279,7 +1353,8 @@
 
 @media (max-width: 991px) {
   .portfolio-dark .portfolio-feature-strip {
-    margin-top: -40px;
+    margin-top: 0;
+    padding-top: 16px;
   }
 
   .portfolio-dark .portfolio-featured-content {
