@@ -36,6 +36,14 @@
   color: var(--pf-text);
 }
 
+/* Prevent any child from forcing horizontal scroll on small screens */
+.portfolio-dark .portfolio-section,
+.portfolio-dark .portfolio-feature-strip,
+.portfolio-dark .portfolio-hero {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .portfolio-dark h1,
 .portfolio-dark h2,
 .portfolio-dark h3,
@@ -1355,6 +1363,16 @@
   .portfolio-dark .portfolio-feature-strip {
     margin-top: 0;
     padding-top: 16px;
+  }
+
+  .portfolio-dark .portfolio-feature-strip .azzle-feature-wraper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .portfolio-dark .portfolio-feature-strip .azzle-feature-item.item2 {
+    margin-bottom: 0;
   }
 
   .portfolio-dark .portfolio-featured-content {
